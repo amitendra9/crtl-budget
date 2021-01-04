@@ -1,7 +1,5 @@
-
-
-
 <?php require './includes/common.php';?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,22 +14,22 @@
         
         <div id="content" class="container-fluid">
             <div class="col-md-4 col-md-offset-4">
-                <div class="panel panel-card ">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
-                        Create new Plan
+                        <h4 class='text-center'>Create New Plan</h4>
                     </div>
-                    <div>
-                        <form class="">
+                    <div  class="panel-body">
+                        <form action="plan_detail.php" method="POST">
                             <div class="form-group">
-                                <label></label>
-                                <input type="text" class="form-control"/>
+                                <label>Initial Budget</label>
+                                <input type="text" class="form-control" id='initialBudget' placeholder='Initial Budget (Ex. 4000)' name='initialBudget' required/>
                             </div>
                             <div class="form-group">
-                                <label></label>
-                                <input type="text" class="form-control"/>
+                                <label>How many peoples you want to add in your group?</label>
+                                <input type="text" class="form-control" placeholder='No. of people' name='peoples' required/>
                             </div>
-                            <div>
-                                <input type="submit" class="btn btn-block" value="Next"/>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary btn-block" value="Next"/>
                             </div>
                         </form>
                     </div>
@@ -39,7 +37,7 @@
             </div>
         </div>
         <?php
-        // put your code here
+        
         ?>
         <?php require './includes/footer.php';?>
     </body>
